@@ -1,0 +1,35 @@
+function Validate() { 
+    var password = document.getElementById("password").value; 
+    var confirmPassword = document.getElementById("confirmPassword").value;
+    var annualIncome = document.getElementById("annualIncome").value; 
+
+    
+   if (password != confirmPassword) { 
+     document.getElementById("confirmPasswordError").innerHTML = "Password not matched";
+     document.getElementById("passwordError").innerHTML = "";
+    //  return false;
+    //  alert("Password not matched")
+    }  
+    else if(password === confirmPassword){
+        document.getElementById("passwordError").innerHTML = "Password matched";
+        document.getElementById("confirmPasswordError").innerHTML = "";
+    } 
+    else{
+        var form = document.getElementById("reg");
+        form.action = "Home.html";
+        form.submit();
+    }
+    
+} 
+
+// function cardtype(){
+// var income= document.getElementById("annualIncome").value;
+// var index=
+// if(income<300000){
+//     alert("Your annual income should be minimum of Rs.300000")
+// }
+// else if(income<500000)
+
+
+
+// }
